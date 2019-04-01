@@ -22,10 +22,10 @@
       ]
     },
     {
-      "name": "Hosted workbench",
+      "name": "sushi",
       "type": "chrome",
       "request": "launch",
-      "url": "https://enter-your-SharePoint-site/_layouts/workbench.aspx",
+      "url": "https://sharepointsushi.sharepoint.com/sites/mvd-test01/_layouts/workbench.aspx",
       "webRoot": "${workspaceRoot}",
       "sourceMaps": true,
       "sourceMapPathOverrides": {
@@ -35,8 +35,7 @@
         "webpack:///../../../../../src/*": "${webRoot}/src/*"
       },
       "runtimeArgs": [
-        "--remote-debugging-port=9222",
-        "-incognito"
+        "--remote-debugging-port=9222"
       ]
     }
   ]

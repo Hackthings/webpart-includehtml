@@ -15,8 +15,6 @@
         "title": { "default": "Include HTML" },
         "description": { "default": "Include HTML file on your web page." },
         "officeFabricIconFontName": "FileHTML",
-        "properties": {
-            "description": "IncludeHTML"
-        }
+        "properties": {}
     }]
 }

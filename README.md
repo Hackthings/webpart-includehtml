@@ -1,26 +1,16 @@
-## webpart-includehtml
+## Web Part Include HTML
 
-This is where you include your WebPart documentation.
+This web part allows you to add the content of an HTML file into a page. Especially handy when you or your customer 
+wants to include a clickable map for instance. These clickable maps are created using the HTML tag `<area>`. 
 
-### Building the code
+### Features
 
-```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
-```
+- Specify HTML file within the site (collection) to render in web part
 
-This package produces the following:
+### Sample
 
-* lib/* - intermediate-stage commonjs build artifacts
-* dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
+![Sample](./images/Portiva Include HTML.mp4)
 
-### Build options
+## Disclaimer
 
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+> THIS CODE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.

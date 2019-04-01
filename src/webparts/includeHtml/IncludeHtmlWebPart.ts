@@ -1,30 +1,24 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
-import { Version } from '@microsoft/sp-core-library';
+import * as React from "react";
+import * as ReactDom from "react-dom";
+import { Version } from "@microsoft/sp-core-library";
 import {
   BaseClientSideWebPart,
   IPropertyPaneConfiguration,
   PropertyPaneTextField
-} from '@microsoft/sp-webpart-base';
+} from "@microsoft/sp-webpart-base";
 
-import * as strings from 'IncludeHtmlWebPartStrings';
-import IncludeHtml from './components/IncludeHtml';
-import { IIncludeHtmlProps } from './components/IIncludeHtmlProps';
+import * as strings from "IncludeHtmlWebPartStrings";
+import { IncludeHtml, IIncludeHtmlProps } from "./components/IncludeHtml";
 
-export interface IIncludeHtmlWebPartProps {
-  description: string;
-}
-
-export default class IncludeHtmlWebPart extends BaseClientSideWebPart<IIncludeHtmlWebPartProps> {
+export default class IncludeHtmlWebPart extends BaseClientSideWebPart<IIncludeHtmlProps> {
 
   public render(): void {
-    const element: React.ReactElement<IIncludeHtmlProps > = React.createElement(
+    const element: React.ReactElement<IIncludeHtmlProps> = React.createElement(
       IncludeHtml,
       {
-        description: this.properties.description
+        htmlFileToInclude: this.properties.htmlFileToInclude
       }
     );
-
     ReactDom.render(element, this.domElement);
   }
 
@@ -33,7 +27,7 @@ export default class IncludeHtmlWebPart extends BaseClientSideWebPart<IIncludeHt
   }
 
   protected get dataVersion(): Version {
-    return Version.parse('1.0');
+    return Version.parse("1.0");
   }
 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
@@ -41,14 +35,15 @@ export default class IncludeHtmlWebPart extends BaseClientSideWebPart<IIncludeHt
       pages: [
         {
           header: {
-            description: strings.PropertyPaneDescription
+            description: "This web part allows you to include/embed an HTML file on to this page."
           },
           groups: [
             {
-              groupName: strings.BasicGroupName,
+              groupName: "Settings",
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
+                PropertyPaneTextField("htmlFileToInclude", {
+                  label: "HTML File Path",
+                  description: "Enter the fully qualified file path - absolute URL - to the HTML file to include."
                 })
               ]
             }
