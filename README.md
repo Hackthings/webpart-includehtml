@@ -9,7 +9,7 @@ wants to include a clickable map for instance. These clickable maps are created 
 
 ### Sample
 
-[Sample](./images/Portiva Include HTML.gif)
+![Sample](https://github.com/mvdungen/webpart-includehtml/blob/master/images/Portiva%20Include%20HTML.gif)
 
 ## Disclaimer
 
