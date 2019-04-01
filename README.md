@@ -9,6 +9,21 @@ wants to include a clickable map for instance. These clickable maps are created 
 
 ### Sample
 
+The following example uses a process image and the following HTML code. The HTML code is changed for the sake of the example.
+
+```html
+<img src="https://server/sites/test/siteassets/home.png" usemap="#processmap">
+
+<map name="processmap">
+  <area shape="rect" coords="15,15,80,80" 
+    href="...">
+  <area shape="rect" coords="133,20,238,77" 
+    href="https://server/sites/test/sitepages/second-page.aspx">
+  <area shape="rect" coords="308,17,409,76" 
+    href="...">
+</map>
+```
+
 ![Sample](https://github.com/mvdungen/webpart-includehtml/blob/master/images/Portiva%20Include%20HTML.gif)
 
 ## Disclaimer
