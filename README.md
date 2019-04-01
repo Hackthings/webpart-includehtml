@@ -9,7 +9,7 @@ wants to include a clickable map for instance. These clickable maps are created 
 
 ### Sample
 
-![Sample](./images/Portiva Include HTML.mp4)
+[Sample](/images/Portiva Include HTML.gif)
 
 ## Disclaimer
 
