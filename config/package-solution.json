@@ -3,7 +3,7 @@
     "solution": {
         "name": "Include HTML",
         "id": "1fb9a71c-8f51-47d0-9acc-856b7f2fd459",
-        "version": "0.0.0.1",
+        "version": "0.0.0.2",
         "includeClientSideAssets": true
     },
     "paths": {
